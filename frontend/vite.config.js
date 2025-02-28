@@ -17,6 +17,6 @@ export default defineConfig({
       },
       // If you have additional endpoints, add them here.
     },
-    allowedHosts: ["7de0-49-207-213-134.ngrok-free.app"], // Add your ngrok host here
+    allowedHosts: ["https://blogify-blond.vercel.app"], // Whitelist your production host (or ngrok host) for dev access
   },
 });

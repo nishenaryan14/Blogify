@@ -17,7 +17,8 @@ import "./App.css";
 
 // Optionally set Axios to always include credentials.
 axios.defaults.withCredentials = true;
-
+axios.defaults.baseURL =
+  process.env.REACT_APP_API_URL || "http://localhost:3000";
 // ProtectedRoute component to guard private routes
 const ProtectedRoute = ({ children }) => {
   const { user } = useAuth();
